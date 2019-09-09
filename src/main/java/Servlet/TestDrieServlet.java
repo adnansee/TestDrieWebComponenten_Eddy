@@ -43,7 +43,6 @@ public class TestDrieServlet extends HttpServlet {
         if (req.getParameter("logout").equals("logout")) {
             session.invalidate();
             System.out.println("logout is called");
-            resp.sendRedirect("testdrie");
 
 
         }
