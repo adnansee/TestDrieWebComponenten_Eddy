@@ -18,11 +18,9 @@
 
 
     <build>
-        <finalName>TestDrie</finalName>
+        <finalName>Eddy/testdrie</finalName>
         <plugins>
             <!-- https://mvnrepository.com/artifact/org.codehaus.cargo/cargo-maven2-plugin -->
-
-
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -53,14 +51,12 @@
                     </configuration>
                 </configuration>
             </plugin>
-
         </plugins>
-
     </build>
 
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -71,8 +67,6 @@
             <artifactId>mariadb-java-client</artifactId>
             <version>2.4.1</version>
         </dependency>
-
-
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
@@ -80,8 +74,6 @@
                 5.2.0
             </version>
         </dependency>
-
-
         <dependency>
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
@@ -107,7 +99,6 @@
             <artifactId>assertj-core</artifactId>
             <version>3.11.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>

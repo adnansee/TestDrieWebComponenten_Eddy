@@ -6,14 +6,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <title>Welcome Page</title>
 </head>
 <body>
+<h1>${responce}</h1>
 <form method="get">
-<p>WELCOME ${message}</p>
-    <button onclick ="goBack()">Go Back</button>
+<h1>Welcome ${message}</h1>
+    <button onclick ="goBack()">Log out</button>
     <script>
         function goBack() {
             window.history.back();

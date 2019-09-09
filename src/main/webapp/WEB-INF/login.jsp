@@ -12,10 +12,11 @@
 </head>
 <body>
 
-<p>
-    HELLO GUEST
-</p>
-<p>Give a name to login </p>
+<h1>
+    Hello Guest, ${responce}
+</h1>
+<h1>Give a name to login, </h1>
+
 
 <form method="post">
     <input name="name" value="" type="text">
