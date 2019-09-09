@@ -18,7 +18,7 @@
 
 
     <build>
-        <finalName>Eddy/testdrie</finalName>
+        <finalName>testdrie</finalName>
         <plugins>
             <!-- https://mvnrepository.com/artifact/org.codehaus.cargo/cargo-maven2-plugin -->
             <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->

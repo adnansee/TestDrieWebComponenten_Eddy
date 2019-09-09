@@ -9,20 +9,13 @@
 
 <html>
 <head>
-    <title>Welcome Page</title>
+    <title>Welcome ${message}</title>
 </head>
 <body>
 <h1>${responce}</h1>
-<form method="get">
+<form method="get" action="logout">
 <h1>Welcome ${message}</h1>
-    <button onclick ="goBack()">Log out</button>
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script>
-    </button>
-
+    <button name="logout" value="logout" >  Log out  </button>
 </form>
 </body>
 </html>
