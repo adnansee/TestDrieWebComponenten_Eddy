@@ -15,7 +15,8 @@ public class TestDrieServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        //je maakt een session aan, deze session blijft bestaan tot ze verloopt of tot je ze zelf invalidate
+        //dat betekent dat als je de pagina refreshed, dat je dan op welcome terecht komt, zonder je te moeten inloggen!
         HttpSession session = req.getSession();
         if (session.isNew()) {
             req.getRequestDispatcher("WEB-INF/login.jsp").forward(req, resp);
@@ -32,7 +33,10 @@ public class TestDrieServlet extends HttpServlet {
 
         String invalid = "gelieve een geldige naam in te voeren!";
         if (givenName=="") {
+            //type on response
             session.setAttribute("responce", invalid);
+            //als je de testdrie pagina opnieuw bezoekt nadat je een invalid naam hebt ingegeven, blijft de foutmelding gewoon bestaan...
+            //de foutmelding mag per foute ingeving slechts 1x getoont worden
             req.getRequestDispatcher("WEB-INF/login.jsp").forward(req, resp);
         } else {
             session.setAttribute("responce", "");
